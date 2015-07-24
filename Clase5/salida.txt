@@ -1,0 +1,4 @@
+        23: Puntos  19 - Dif. goles  19 - Prom 0.23500
+        26: Puntos   3 - Dif. goles   3 - Prom 0.12200
+        12: Puntos  -5 - Dif. goles  -5 - Prom 1.80000
+         9: Puntos   1 - Dif. goles   1 - Prom 2.70000
