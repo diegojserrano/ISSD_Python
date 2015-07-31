@@ -1,26 +1,36 @@
 class Persona:
-
-    def __init__(self, nombre, apellido):
+    def __init__(self, nombre, apellido, documento, edad):
         self.nombre = nombre
         self.apellido = apellido
-
-
-    def __str__(self):
-        return self.nombre+ ' ' + self.apellido
+        self.documento = documento
+        self.edad = edad
 
     @property
-    def nombre(self):
-        return self.__nombre
+    def edad(self):
+        return self.__edad
 
-    @nombre.setter
-    def nombre(self, valor):
-        self.__nombre = valor
+    @edad.setter
+    def edad(self, valor):
+        if valor >= 0 and valor <= 120:
+            self.__edad = valor
 
-p1 = Persona("juan", "perez")
-p2 = Persona("juana", "pereza")
+    def __str__(self):
+        return "Persona: nombre = " + self.nombre + \
+               " - documento = " + str(self.documento) + \
+               " - edad = " + str(self.edad)
 
-print(p1)
-print(p2)
-p1.nombre = "asdfasdf"
+    def nombreCompleto(self):
+        return self.nombre + " " + self.apellido
 
-print(p1)
+
+
+
+
+
+#
+#    def nombre(self):
+#        return self.__nombre
+#
+#    @nombre.setter
+#    def nombre(self, valor):
+#        self.__nombre = valor
