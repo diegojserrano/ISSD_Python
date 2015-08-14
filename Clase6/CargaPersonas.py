@@ -12,7 +12,7 @@ for i in range(3):
 
     p.edad = 200
 
-    print(p.nombreCompleto())
+    print(p)
     listaPersonas.append(p)
 
 for p in listaPersonas:
