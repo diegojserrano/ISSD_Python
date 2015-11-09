@@ -10,3 +10,6 @@ x, y = y,x
 
 print(x)
 print(y)
+
+print (punto2[1])
+input()
